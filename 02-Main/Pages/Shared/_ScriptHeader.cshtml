@@ -1,1 +1,350 @@
-﻿
+﻿<!-- WordPress Theme Variables -->
+<style id='thim-style-inline-css' type='text/css'>
+:root {
+    --thim-body-primary-color: #ffb606;
+    --thim-body-secondary-color: #e6a303;
+    --thim-button-text-color: #000000;
+    --thim-button-hover-color: #e6a303;
+    --thim-border-color: #eee;
+    --thim-placeholder-color: #999;
+    --thim-font-body-font-family: Roboto;
+    --thim-font-title-font-family: 'Roboto Slab';
+    --thim-font-title-color: #333333;
+    --thim-font-body-color: #606060;
+    --thim-footer-bg-color: #111111;
+    --thim-footer-color-title: #fff;
+    --thim-footer-color-text: #999999;
+    --thim-footer-color-link: #999999;
+    --thim-footer-color-hover: #ffb606;
+    --thim-padding-content-pdtop-desktop: 60px;
+    --thim-padding-content-pdbottom-desktop: 60px;
+    --thim-padding-content-pdtop-mobile: 40px;
+    --thim-padding-content-pdbottom-mobile: 40px;
+    --thim-copyright-bg-color: #2c2c2c;
+    --thim-copyright-text-color: #707070;
+    --thim-copyright-border-color: rgba(255,255,255,0.1);
+    --thim-bg-pattern: url("~/wp-content/themes/eduma/images/patterns/pattern1.png");
+    --thim-bg-repeat: no-repeat;
+    --thim-bg-position: center center;
+    --thim-bg-attachment: inherit;
+    --thim-bg-size: inherit;
+    --thim-footer-bg-repeat: no-repeat;
+    --thim-footer-bg-position: center center;
+    --thim-footer-bg-size: inherit;
+    --thim-footer-bg-attachment: inherit;
+    --thim-body-bg-color: #fff;
+    --nav-mobile-color-background: #ffffff;
+    --nav-mobile-color-text: #333;
+    --nav-mobile-color-hover: #ffb606;
+}
+
+/* Hero Slider with WordPress Background */
+.hero-slider {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    background-image: url('~/wp-content/uploads/sites/95/2023/03/bg-register-now-new.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-slider::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.slide-content {
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.thim-slider-sub-heading {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.thim-slider-heading {
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    line-height: 1.1;
+}
+
+.thim-slider-button {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: var(--thim-body-primary-color);
+    color: var(--thim-button-text-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.thim-slider-button:hover {
+    background-color: var(--thim-button-hover-color);
+    color: var(--thim-button-text-color);
+}
+
+/* Background Images from WordPress Uploads */
+.elementor-element-749413db {
+    background-image: url("~/wp-content/uploads/sites/95/2023/03/bg-lastest-new-now.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.elementor-element-3acc908 {
+    background-image: url("~/wp-content/uploads/sites/95/2023/03/bg-register-now-new.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.elementor-element-4c01fd4 {
+    background-image: url("~/wp-content/uploads/sites/95/2022/12/bg-footer-bottom.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Course Grid Styles with WordPress Assets */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.course-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+.course-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.course-content {
+    padding: 20px;
+}
+
+.course-content h3 {
+    margin-bottom: 10px;
+    color: var(--thim-font-title-color);
+}
+
+.course-content p {
+    color: var(--thim-font-body-color);
+    margin-bottom: 15px;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background-color: var(--thim-body-primary-color);
+    color: var(--thim-button-text-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--thim-button-hover-color);
+}
+
+.elementor-button {
+    background-color: var(--thim-body-primary-color);
+    color: var(--thim-button-text-color);
+    padding: 11px 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+.elementor-button:hover {
+    background-color: var(--thim-button-hover-color);
+}
+
+/* Font Face from WordPress Uploads */
+@@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("~/wp-content/uploads/sites/95/thim-fonts/roboto/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLoHQuAX-k2Qn.woff2") format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* Layout Styles */
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.col-sm-12, .col-md-2, .col-md-4, .col-md-6 {
+    padding: 0 15px;
+}
+
+.col-sm-12 { width: 100%; }
+.col-md-2 { width: 16.666%; }
+.col-md-4 { width: 33.333%; }
+.col-md-6 { width: 50%; }
+
+/* Footer Styles with WordPress Background */
+.site-footer {
+    background-color: var(--thim-footer-bg-color);
+    background-image: url('~/wp-content/uploads/sites/95/2022/12/bg-footer-bottom.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--thim-footer-color-text);
+    padding: 60px 0 20px;
+}
+
+.site-footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(17, 17, 17, 0.9);
+    z-index: 1;
+}
+
+.site-footer .container {
+    position: relative;
+    z-index: 2;
+}
+
+.site-footer h4.title {
+    color: var(--thim-footer-color-title);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.site-footer a {
+    color: var(--thim-footer-color-link);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.site-footer a:hover {
+    color: var(--thim-footer-color-hover);
+}
+
+.site-footer ul.thim-header-info li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.site-footer ul.thim-social-media {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+.site-footer ul.thim-social-media li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: var(--thim-body-primary-color);
+    color: var(--thim-button-text-color);
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.site-footer ul.thim-social-media li a:hover {
+    background-color: var(--thim-button-hover-color);
+    transform: translateY(-3px);
+}
+
+/* WordPress Theme Icon Styles */
+.tk {
+    font-family: 'thim-ekits' !important;
+}
+
+.tk-phone::before { content: "\e900"; }
+.tk-envelope::before { content: "\e901"; }
+.tk-students-friend::before { content: "\e902"; }
+.tk-study1::before { content: "\e903"; }
+.tk-speech::before { content: "\e904"; }
+.tk-open-book1::before { content: "\e905"; }
+.tk-students::before { content: "\e906"; }
+.tk-map-marker::before { content: "\e907"; }
+.tk-face::before { content: "\e908"; }
+.tk-x-twitter::before { content: "\e909"; }
+.tk-pinterest-p::before { content: "\e910"; }
+.tk-instagram::before { content: "\e911"; }
+
+/* Utility Classes */
+.text-center { text-align: center; }
+.mt-4 { margin-top: 2rem; }
+.mb-4 { margin-bottom: 2rem; }
+</style>
+
+<!-- Responsive CSS Media Queries -->
+<style type='text/css'>
+@@media (max-width: 768px) {
+    .thim-slider-heading {
+        font-size: 40px;
+    }
+    
+    .col-md-2, .col-md-4, .col-md-6 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .courses-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>

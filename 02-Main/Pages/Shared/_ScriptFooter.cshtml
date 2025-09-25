@@ -1,1 +1,219 @@
-﻿
+﻿<!-- WordPress JavaScript Variables -->
+<script type="text/javascript" id="lpData">
+var lpData = {
+    "site_url": "@Url.Content("~/")".replace(/\/+$/, ''),
+    "user_id": "0",
+    "theme": "eduma",
+    "lp_rest_url": "@Url.Content("~/api/")",
+    "nonce": "csrf_token_placeholder",
+    "is_course_archive": "",
+    "courses_url": "@Url.Content("~/courses/")",
+    "urlParams": [],
+    "lp_version": "4.2.9.2",
+    "ajaxUrl": "@Url.Content("~/wp-admin/admin-ajax.html")",
+    "lpAjaxUrl": "@Url.Content("~/lp-ajax-handle")",
+    "coverImageRatio": "5.16",
+    "toast": {
+        "gravity": "bottom",
+        "position": "center",
+        "duration": 3000,
+        "close": 1,
+        "stopOnFocus": 1,
+        "classPrefix": "lp-toast"
+    },
+    "i18n": []
+};
+</script>
+
+<script type="text/javascript" id="lpSettingCourses">
+var lpSettingCourses = {
+    "lpArchiveLoadAjax": "1",
+    "lpArchiveNoLoadAjaxFirst": "0",
+    "lpArchivePaginationType": "number",
+    "noLoadCoursesJs": "0"
+};
+</script>
+
+<!-- WordPress WooCommerce JavaScript -->
+<script type="text/javascript" id="wc-add-to-cart-js-extra">
+var wc_add_to_cart_params = {
+    "ajax_url": "@Url.Content("~/wp-admin/admin-ajax.html")",
+    "wc_ajax_url": "@Url.Content("~/wp-admin/admin-ajax.html")",
+    "i18n_view_cart": "View cart",
+    "cart_url": "@Url.Content("~/cart/")",
+    "is_cart": "",
+    "cart_redirect_after_add": "no"
+};
+</script>
+
+<!-- WordPress Elementor JavaScript -->
+<script type="text/javascript">
+(function() {
+    var elementorFrontendConfig = {
+        "environmentMode": {
+            "edit": false,
+            "wpPreview": false,
+            "isScriptDebug": false
+        },
+        "i18n": {
+            "shareOnFacebook": "Share on Facebook",
+            "shareOnTwitter": "Share on Twitter",
+            "pinIt": "Pin it",
+            "download": "Download",
+            "downloadImage": "Download image",
+            "fullscreen": "Fullscreen",
+            "zoom": "Zoom",
+            "share": "Share",
+            "playVideo": "Play Video",
+            "previous": "Previous",
+            "next": "Next",
+            "close": "Close"
+        },
+        "is_rtl": false,
+        "breakpoints": {
+            "xs": 0,
+            "sm": 480,
+            "md": 768,
+            "lg": 1025,
+            "xl": 1440,
+            "xxl": 1600
+        },
+        "responsive": {
+            "breakpoints": {
+                "mobile": {
+                    "label": "Mobile",
+                    "value": 767,
+                    "default_value": 767,
+                    "direction": "max",
+                    "is_enabled": true
+                },
+                "mobile_extra": {
+                    "label": "Mobile Extra",
+                    "value": 880,
+                    "default_value": 880,
+                    "direction": "max",
+                    "is_enabled": false
+                },
+                "tablet": {
+                    "label": "Tablet",
+                    "value": 1024,
+                    "default_value": 1024,
+                    "direction": "max",
+                    "is_enabled": true
+                },
+                "tablet_extra": {
+                    "label": "Tablet Extra",
+                    "value": 1200,
+                    "default_value": 1200,
+                    "direction": "max",
+                    "is_enabled": false
+                },
+                "laptop": {
+                    "label": "Laptop",
+                    "value": 1366,
+                    "default_value": 1366,
+                    "direction": "max",
+                    "is_enabled": false
+                },
+                "widescreen": {
+                    "label": "Widescreen",
+                    "value": 2400,
+                    "default_value": 2400,
+                    "direction": "min",
+                    "is_enabled": false
+                }
+            }
+        },
+        "version": "3.32.2",
+        "is_static": false,
+        "experimentalFeatures": {
+            "e_swiper_latest": true,
+            "e_optimized_css_loading": true,
+            "additional_custom_breakpoints": true,
+            "container": true,
+            "e_swiper_latest_editor": true,
+            "theme_builder_v2": true,
+            "hello-theme-header-footer": true,
+            "block_editor_assets_optimize": true,
+            "landing-pages": true,
+            "e_image_loading_optimization": true,
+            "e_global_styleguide": true,
+            "page-transitions": true,
+            "notes": true,
+            "loop": true,
+            "form-submissions": true,
+            "e_scroll_snap": true
+        },
+        "urls": {
+            "assets": "@Url.Content("~/wp-content/plugins/elementor/assets/")"
+        },
+        "swiperClass": "swiper",
+        "settings": {
+            "page": [],
+            "editorPreferences": []
+        },
+        "kit": {
+            "active_breakpoints": ["viewport_mobile", "viewport_tablet"],
+            "global_image_lightbox": "yes",
+            "lightbox_enable_counter": "yes",
+            "lightbox_enable_fullscreen": "yes",
+            "lightbox_enable_zoom": "yes",
+            "lightbox_enable_share": "yes",
+            "lightbox_title_src": "title",
+            "lightbox_description_src": "description"
+        },
+        "post": {
+            "id": 12,
+            "title": "@ViewData["Title"]",
+            "excerpt": "",
+            "featuredImage": false
+        }
+    };
+    
+    window.elementorFrontendConfig = elementorFrontendConfig;
+})();
+</script>
+
+<!-- Additional WordPress Theme JavaScript Initialization -->
+<script type="text/javascript">
+// WordPress Theme Initialization
+jQuery(document).ready(function($) {
+    // Remove loading overlay
+    $('body').removeClass('thim-body-load-overlay');
+    
+    // Initialize mobile menu
+    $('.mobile-menu-trigger').on('click', function() {
+        $('.mobile-menu').toggleClass('active');
+    });
+    
+    // Initialize course cards hover effects
+    $('.course-card').hover(
+        function() { $(this).addClass('hover'); },
+        function() { $(this).removeClass('hover'); }
+    );
+    
+    // Initialize smooth scrolling for internal links
+    $('a[href^="#"]').on('click', function(event) {
+        var target = $(this.getAttribute('href'));
+        if (target.length) {
+            event.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top - 80
+            }, 1000);
+        }
+    });
+    
+    // Initialize hero slider if needed
+    if ($('.hero-slider').length) {
+        // Basic slider functionality can be added here
+        var slides = $('.hero-slider .slide');
+        var currentSlide = 0;
+        
+        setInterval(function() {
+            slides.removeClass('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides.eq(currentSlide).addClass('active');
+        }, 5000);
+    }
+});
+</script>

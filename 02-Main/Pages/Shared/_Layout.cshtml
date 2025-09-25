@@ -1,36 +1,65 @@
 ﻿<!DOCTYPE html>
-<html lang="en-US" prefix="og: https://ogp.me/ns#" class="no-js">
+<html itemscope itemtype="http://schema.org/WebPage" lang="en-US" prefix="og: https://ogp.me/ns#">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>@ViewData["Title"] - stairwaydesigns</title>
-    <base href="@Url.Content("~/")" />    
-    @await RenderSectionAsync("Styles", required: false)
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<title>@ViewData["Title"] - Sri Vinayaka Classes</title>
+	<meta name="description" content="Education Website – Sri Vinayaka Classes is made for LMS, training center, courses hub, college, academy, university, school, eLearning."/>
+	<base href="@Url.Content("~/")" />
+
+	<!-- CSS Files -->
+	<link rel='stylesheet' id='contact-form-7-css' href='~/wp-content/plugins/contact-form-7/includes/css/styles.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='tp-css-css' href='~/wp-content/plugins/tp-chameleon/assets/style.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='select2-css' href='~/wp-content/plugins/woocommerce/assets/css/select2.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='landing-slick-css-css' href='~/wp-content/plugins/thim-widget-landing/assets/css/slick.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='landing-swiper-css-css' href='~/wp-content/plugins/thim-widget-landing/assets/css/swiper-bundle.min.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='landing-css-css' href='~/wp-content/plugins/thim-widget-landing/style.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='elementor-icons-css' href='~/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='elementor-frontend-css' href='~/wp-content/plugins/elementor/assets/css/frontend.min.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='font-awesome-5-all-css' href='~/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='font-awesome-4-shim-css' href='~/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='thim-ekit-frontend-css' href='~/wp-content/plugins/thim-elementor-kit/build/frontend.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='thim-ekit-widgets-css' href='~/wp-content/plugins/thim-elementor-kit/build/widgets.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='swiper-css' href='~/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='learnpress-widgets-css' href='~/wp-content/plugins/learnpress/assets/css/widgets.min.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='thim-style-css' href='~/wp-content/themes/eduma/style.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='elementor-icons-thim-ekits-fonts-css' href='~/wp-content/plugins/thim-elementor-kit/build/libraries/thim-ekits/css/thim-ekits-icons.min.css' type='text/css' media='all' />
+	
+	<style>
+		body { background-color: white !important; }
+	</style>
+	
+	@await Html.PartialAsync("_ScriptHeader")
+	@await RenderSectionAsync("Styles", required: false)
 </head>
-<body class="home page-template-default page page-id-4876 theme-inoterior woocommerce-no-js mega-menu-themetechmount-main-menu tm-titlebar-bcrumb-bottom tm-pageslider-yes tm-headerstyle-classic-overlay tm-layout-default themetechmount-topbar-no themetechmount-wide themetechmount-page-full-width tm-empty-sidebar themetechmount-maxmegamenu-active elementor-default elementor-kit-10 elementor-page elementor-page-4876">
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
-    <div id="tm-home"></div>
-    <div class="main-holder">
-        <div id="page" class="hfeed site">
-            <main role="main">
-                @await Html.PartialAsync("_ScriptHeader")
+<body class="pmpro-variation_1 home wp-singular page-template page-template-elementor_header_footer page page-id-12 wp-embed-responsive wp-theme-eduma theme-eduma woocommerce-no-js pmpro-body-has-access group-blog thim-body-load-overlay bg-boxed-image switch-layout-normal thim-popup-feature learnpress-v4 fixloader nofixcss has-navbar-mobile elementor-default elementor-template-full-width elementor-kit-8941 elementor-page elementor-page-12" id="thim-body">
 
-                <header id="masthead" class="tm-header-style-classic tm-header-overlay tm-main-menu-total-7 tm-main-menu-more-than-six tm-floatingbar-default">
-                    <div class="tm-header-block tm-mmenu-active-color-skin tm-dmenu-active-color-skin tm-dmenu-sep-no">
-                        @await Html.PartialAsync("_PageHeader")
+<div id="wrapper-container" class="wrapper-container">
+	<div class="content-pusher">
+		@await Html.PartialAsync("_PageHeader")
 
-                        <div class="themetechmount-slider-wrapper">
-                            <div class="themetechmount-slider-wide">
-                                @RenderBody()
-                            </div>
-                        </div>
-                    </div>
-                </header>
-            </main>
-            @await Html.PartialAsync("_PageFooter")
-        </div>
-    </div>
-    @await Html.PartialAsync("_ScriptFooter")
+		<div id="main-content">
+			@RenderBody()
+		</div>
+		@await Html.PartialAsync("_PageFooter")
+	
+	</div>
+</div>
+
+<!-- JavaScript Files -->
+<script type="text/javascript" src="~/wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script>
+<script type="text/javascript" src="~/wp-includes/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="~/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js" id="jquery-blockui-js" defer="defer"></script>
+<script type="text/javascript" src="~/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js" id="wc-add-to-cart-js" defer="defer"></script>
+<script type="text/javascript" src="~/wp-content/plugins/woocommerce/assets/js/select2/select2.full.min.js" id="select2-js" defer="defer"></script>
+<script type="text/javascript" src="~/wp-content/plugins/revslider/sr6/assets/js/rbtools.min.js" async id="tp-tools-js"></script>
+<script type="text/javascript" src="~/wp-content/plugins/revslider/sr6/assets/js/rs6.min.js" async id="revmin-js"></script>
+<script type="text/javascript" src="~/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js" id="font-awesome-4-shim-js"></script>
+<script type="text/javascript" src="~/wp-content/plugins/learnpress/assets/js/dist/loadAJAX.min.js" id="lp-load-ajax-js" async="async"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+
+@await Html.PartialAsync("_ScriptFooter")
+@await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
