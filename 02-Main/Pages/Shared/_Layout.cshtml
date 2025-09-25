@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en-US" prefix="og: https://ogp.me/ns#" class="no-js">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>@ViewData["Title"] - stairwaydesigns</title>
+    <base href="@Url.Content("~/")" />    
+    @await RenderSectionAsync("Styles", required: false)
+</head>
+<body class="home page-template-default page page-id-4876 theme-inoterior woocommerce-no-js mega-menu-themetechmount-main-menu tm-titlebar-bcrumb-bottom tm-pageslider-yes tm-headerstyle-classic-overlay tm-layout-default themetechmount-topbar-no themetechmount-wide themetechmount-page-full-width tm-empty-sidebar themetechmount-maxmegamenu-active elementor-default elementor-kit-10 elementor-page elementor-page-4876">
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+    <div id="tm-home"></div>
+    <div class="main-holder">
+        <div id="page" class="hfeed site">
+            <main role="main">
+                @await Html.PartialAsync("_ScriptHeader")
+
+                <header id="masthead" class="tm-header-style-classic tm-header-overlay tm-main-menu-total-7 tm-main-menu-more-than-six tm-floatingbar-default">
+                    <div class="tm-header-block tm-mmenu-active-color-skin tm-dmenu-active-color-skin tm-dmenu-sep-no">
+                        @await Html.PartialAsync("_PageHeader")
+
+                        <div class="themetechmount-slider-wrapper">
+                            <div class="themetechmount-slider-wide">
+                                @RenderBody()
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </main>
+            @await Html.PartialAsync("_PageFooter")
+        </div>
+    </div>
+    @await Html.PartialAsync("_ScriptFooter")
+</body>
+</html>

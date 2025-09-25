@@ -1,0 +1,2 @@
+(self.legacyJsonp=self.legacyJsonp||[]).push([["95303"],{351760:function(n,t,e){"use strict";e.r(t),e.d(t,{default:function(){return r}});var u=e(595612),o=e.n(u);function r({children:n}){return n(o())}},595612:function(n,t,e){try{"undefined"!=typeof window&&(e(992446),e(853570),e(570447),e(734119),e(620022),e(721895),e(620022))}catch(n){}n.exports={locale:"en-US",plural:e(188718)}},188718:function(n){n.exports=function(n){return 1!==n}}}]);
+//# sourceMappingURL=https://sm.pinimg.com/webapp/locale-en_US-LocaleDataLoader-e218205f0f41edf9.js.map

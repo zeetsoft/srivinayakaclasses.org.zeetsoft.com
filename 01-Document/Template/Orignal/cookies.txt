@@ -1,0 +1,16 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+eduma.thimpress.com	TRUE	/	FALSE	1999999999	pmpro_visit	1
+eduma.thimpress.com	TRUE	/	FALSE	1999999999	woocommerce_items_in_cart	1
+eduma.thimpress.com	TRUE	/	FALSE	1999999999	wp_woocommerce_session_8ee9430fc4bf5a4ae751108cc8dc095f	t_23376d4f459cec60d54785636ddcc7%7C1758930931%7C1758844531%7C%24generic%24GI_MpAOJCaTYzDhTDp0tB8XRibN722ilQGD9DwBY
+eduma.thimpress.com	TRUE	/	FALSE	1999999999	lp_session_guest	g-68d0ef9e180f6
+www.pinterest.com	TRUE	/	FALSE	1999999999	csrftoken	9bc6ee0e083030370a55f91947adddb6
+.pinterest.com	TRUE	/	FALSE	1999999999	_pinterest_sess	TWc9PSZhdXpGK2UrOTN2K0VWVmR3d2l6c0RkM1ZQM1JWSFJxZllNbFpSTFhzY2pOZzRFQUY2eVNoYmdGUWJuNEwveFhpNFczckpad3p2RFVQY253d0w0TnovZ0NSQkVVRkk5aTFyVTJ0M2VDeUFyQT0mWjVISWpkUlFlYkp2Sy9FbjY3Nk1RN1M3TW5NPQ==
+www.pinterest.com	TRUE	/	FALSE	1999999999	samesite	none
+.pinterest.com	TRUE	/	FALSE	1999999999	_auth	0
+www.pinterest.com	TRUE	/	FALSE	1999999999	_routing_id	bd2cb8db-336b-4424-bc8e-ae7b72a963bd"
+okra.pinterest.com	TRUE	/	FALSE	1999999999	_ir	0
+eduma.thimpress.com	TRUE	/	FALSE	1999999999	wordpress_test_cookie	WP%20Cookie%20check
+eduma.thimpress.com	TRUE	/	FALSE	1999999999	woocommerce_cart_hash	71064a4cc43c9786fbd3a087efb967eb
+api.sardine.ai	TRUE	/	FALSE	1999999999	_immortal|deviceToken	eyJhbGciOiJkaXIiLCJjdHkiOiJKV1QiLCJlbmMiOiJBMTI4R0NNIiwidHlwIjoiSldUIn0..FEgEiiZ3ReLuRsRF.PnED8xx_JBDYU4EXaf8UfVqxJ0R7CqUPqig2wt4IgNgj1r7lLw8G0Dmcse6KNBCRUddnZ2r-rUuHNk6BW2gm79t9NdyAoIRXe19mDYqLnv1gVNku6Oq4Hn0PPAclg6dszDSNukfHp2Y4jq1FCDTGvx964LXKr4pWcUsbaX8xKaP4DfEnpwKBdCtIy3UIOFdyv0vWbb3p74RTpCgpDFQWW9wYRB6Lp3xJVUWdvY-LeRkDALzpeZniOLcru1kGkYplb2oIYQ4RW9Jl_Wb2CZPWXlULUOywAiySEdTLCw.YYSL4JV6i9mryeUkIBj2sA
+
