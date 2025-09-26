@@ -1204,25 +1204,3 @@
             </div>
         </header>
 
-        <div id="main-content">
-            <section class="content-area" style="min-height: 497px;">
-                <div class="top_heading_out">
-                    <div class="top_site_main" style="color: rgb(255, 255, 255); background-image: url(&quot;../wp-content/uploads/sites/95/2022/11/Eduma-cover-banner-17.jpg&quot;); padding-top: 120.203px;">
-                        <span class="overlay-top-header" style="background-color:rgba(0,0,0,0.5);"></span><div class="page-title-wrapper">
-                            <div class="banner-wrapper container">
-                                <h1 class="page-title">About Us</h1>
-                            </div>
-                        </div>
-                    </div><div class="breadcrumbs-wrapper">
-                        <div class="container">
-                            <ul class="breadcrumbs" id="breadcrumbs"><li><a href="../index.html">Home</a></li><li>About Us</li></ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="container site-content">
-                    
-                </div>
-            </section>
-        </div>
-    </div>
-</div>

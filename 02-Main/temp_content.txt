@@ -1,0 +1,146 @@
+        <div id="main-content">
+            <section class="content-area" style="min-height: 497px;">
+                <div class="top_heading_out">
+                    <div class="top_site_main" style="color: rgb(255, 255, 255); background-image: url(&quot;../wp-content/uploads/sites/95/2022/11/Eduma-cover-banner-17.jpg&quot;); padding-top: 120.203px;">
+                        <span class="overlay-top-header" style="background-color:rgba(0,0,0,0.5);"></span><div class="page-title-wrapper">
+                            <div class="banner-wrapper container">
+                                <h1 class="page-title">About Us</h1>
+                            </div>
+                        </div>
+                    </div><div class="breadcrumbs-wrapper">
+                        <div class="container">
+                            <ul class="breadcrumbs" id="breadcrumbs"><li><a href="../index.html">Home</a></li><li>About Us</li></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="container site-content">
+                    <div class="row">
+                        <main id="main" class="site-main col-sm-12 full-width">
+                            <article id="post-2901" class="post-2901 page type-page status-publish hentry pmpro-has-access">
+                                <div class="entry-content">
+                                    <div data-elementor-type="wp-post" data-elementor-id="2901" class="elementor elementor-2901">
+                                        <section class="elementor-section elementor-top-section elementor-element elementor-element-7d27883 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7d27883" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+                                            <div class="elementor-container elementor-column-gap-default">
+                                                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d513acf" data-id="d513acf" data-element_type="column">
+                                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                                        <div class="elementor-element elementor-element-3197733 thim-ekits-heading-text-center elementor-widget thim-ekits-heading elementor-widget-thim-heading" data-id="3197733" data-element_type="widget" data-widget_type="thim-heading.default">
+                                                            <div class="elementor-widget-container">
+                                                                <div class="sc_heading text-center">
+                                                                    <h2 class="title">Learn with passion to live with purpose. </h2><div class="sub-heading">
+                                                                        <p>Neque convallis a cras semper auctor. Libero id faucibus nisl tincidunt egetnvallis a cras semper auctonvallis a cras semper aucto. </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <section class="elementor-section elementor-top-section elementor-element elementor-element-872013e elementor-section-stretched about-counter elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="872013e" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+                                            <div class="elementor-container elementor-column-gap-default">
+                                                <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-2b6ec5b" data-id="2b6ec5b" data-element_type="column">
+                                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                                        <div class="elementor-element elementor-element-4b6ec5b elementor-widget elementor-widget-counter" data-id="4b6ec5b" data-element_type="widget" data-widget_type="counter.default">
+                                                            <div class="elementor-widget-container">
+                                                                <div class="elementor-counter">
+                                                                    <div class="elementor-counter-number-wrapper">
+                                                                        <span class="elementor-counter-number-prefix"></span>
+                                                                        <span class="elementor-counter-number" data-duration="2000" data-to-value="25" data-from-value="0" data-delimiter=","">25</span>
+                                                                        <span class="elementor-counter-number-suffix">+</span>
+                                                                    </div>
+                                                                    <div class="elementor-counter-title">Years of Experience</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-8b6ec5b" data-id="8b6ec5b" data-element_type="column">
+                                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                                        <div class="elementor-element elementor-element-9b6ec5b elementor-widget elementor-widget-counter" data-id="9b6ec5b" data-element_type="widget" data-widget_type="counter.default">
+                                                            <div class="elementor-widget-container">
+                                                                <div class="elementor-counter">
+                                                                    <div class="elementor-counter-number-wrapper">
+                                                                        <span class="elementor-counter-number-prefix"></span>
+                                                                        <span class="elementor-counter-number" data-duration="2000" data-to-value="5000" data-from-value="0" data-delimiter=","">5000</span>
+                                                                        <span class="elementor-counter-number-suffix">+</span>
+                                                                    </div>
+                                                                    <div class="elementor-counter-title">Students Taught</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-1b6ec5b" data-id="1b6ec5b" data-element_type="column">
+                                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                                        <div class="elementor-element elementor-element-2b6ec5b elementor-widget elementor-widget-counter" data-id="2b6ec5b" data-element_type="widget" data-widget_type="counter.default">
+                                                            <div class="elementor-widget-container">
+                                                                <div class="elementor-counter">
+                                                                    <div class="elementor-counter-number-wrapper">
+                                                                        <span class="elementor-counter-number-prefix"></span>
+                                                                        <span class="elementor-counter-number" data-duration="2000" data-to-value="100" data-from-value="0" data-delimiter=","">100</span>
+                                                                        <span class="elementor-counter-number-suffix">+</span>
+                                                                    </div>
+                                                                    <div class="elementor-counter-title">Expert Faculty</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-3b6ec5b" data-id="3b6ec5b" data-element_type="column">
+                                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                                        <div class="elementor-element elementor-element-4b6ec5b elementor-widget elementor-widget-counter" data-id="4b6ec5b" data-element_type="widget" data-widget_type="counter.default">
+                                                            <div class="elementor-widget-container">
+                                                                <div class="elementor-counter">
+                                                                    <div class="elementor-counter-number-wrapper">
+                                                                        <span class="elementor-counter-number-prefix"></span>
+                                                                        <span class="elementor-counter-number" data-duration="2000" data-to-value="95" data-from-value="0" data-delimiter=","">95</span>
+                                                                        <span class="elementor-counter-number-suffix">%</span>
+                                                                    </div>
+                                                                    <div class="elementor-counter-title">Success Rate</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <section class="elementor-section elementor-top-section elementor-element elementor-element-5d27883 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5d27883" data-element_type="section">
+                                            <div class="elementor-container elementor-column-gap-default">
+                                                <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-6d513acf" data-id="6d513acf" data-element_type="column">
+                                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                                        <div class="elementor-element elementor-element-7d27883 elementor-widget elementor-widget-heading" data-id="7d27883" data-element_type="widget" data-widget_type="heading.default">
+                                                            <div class="elementor-widget-container">
+                                                                <h2 class="elementor-heading-title elementor-size-default">About Sri Vinayaka Classes</h2>
+                                                            </div>
+                                                        </div>
+                                                        <div class="elementor-element elementor-element-8d27883 elementor-widget elementor-widget-text-editor" data-id="8d27883" data-element_type="widget" data-widget_type="text-editor.default">
+                                                            <div class="elementor-widget-container">
+                                                                <div class="elementor-text-editor elementor-clearfix">
+                                                                    <p>Sri Vinayaka Classes is dedicated to providing quality education and fostering a passion for learning. Our experienced faculty and comprehensive curriculum ensure that students achieve their academic goals and develop lifelong skills.</p>
+                                                                    <p>We offer a wide range of courses designed to meet the needs of students at different levels, from beginners to advanced learners. Our teaching methodology combines traditional wisdom with modern techniques to create an engaging learning environment.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-9d513acf" data-id="9d513acf" data-element_type="column">
+                                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                                        <div class="elementor-element elementor-element-1d27883 elementor-widget elementor-widget-image" data-id="1d27883" data-element_type="widget" data-widget_type="image.default">
+                                                            <div class="elementor-widget-container">
+                                                                <img src="../wp-content/uploads/sites/95/2022/11/about-us-image.jpg" alt="Sri Vinayaka Classes" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </article>
+                        </main>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
