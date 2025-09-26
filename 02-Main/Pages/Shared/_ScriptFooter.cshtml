@@ -26,12 +26,12 @@ var lpData = {
 </script>
 
 <script type="text/javascript" id="lpSettingCourses">
-var lpSettingCourses = {
-    "lpArchiveLoadAjax": "1",
-    "lpArchiveNoLoadAjaxFirst": "0",
-    "lpArchivePaginationType": "number",
-    "noLoadCoursesJs": "0"
-};
+    var lpSettingCourses = {
+        "lpArchiveLoadAjax": "1",
+        "lpArchiveNoLoadAjaxFirst": "0",
+        "lpArchivePaginationType": "number",
+        "noLoadCoursesJs": "0"
+    };
 </script>
 
 <!-- WordPress WooCommerce JavaScript -->
@@ -169,51 +169,540 @@ var wc_add_to_cart_params = {
             "featuredImage": false
         }
     };
-    
+
     window.elementorFrontendConfig = elementorFrontendConfig;
 })();
 </script>
 
 <!-- Additional WordPress Theme JavaScript Initialization -->
 <script type="text/javascript">
-// WordPress Theme Initialization
-jQuery(document).ready(function($) {
-    // Remove loading overlay
-    $('body').removeClass('thim-body-load-overlay');
-    
-    // Initialize mobile menu
-    $('.mobile-menu-trigger').on('click', function() {
-        $('.mobile-menu').toggleClass('active');
-    });
-    
-    // Initialize course cards hover effects
-    $('.course-card').hover(
-        function() { $(this).addClass('hover'); },
-        function() { $(this).removeClass('hover'); }
-    );
-    
-    // Initialize smooth scrolling for internal links
-    $('a[href^="#"]').on('click', function(event) {
-        var target = $(this.getAttribute('href'));
-        if (target.length) {
-            event.preventDefault();
-            $('html, body').stop().animate({
-                scrollTop: target.offset().top - 80
-            }, 1000);
+    // WordPress Theme Initialization
+    jQuery(document).ready(function ($) {
+        // Remove loading overlay
+        $('body').removeClass('thim-body-load-overlay');
+
+        // Initialize mobile menu
+        $('.mobile-menu-trigger').on('click', function () {
+            $('.mobile-menu').toggleClass('active');
+        });
+
+        // Initialize course cards hover effects
+        $('.course-card').hover(
+            function () { $(this).addClass('hover'); },
+            function () { $(this).removeClass('hover'); }
+        );
+
+        // Initialize smooth scrolling for internal links
+        $('a[href^="#"]').on('click', function (event) {
+            var target = $(this.getAttribute('href'));
+            if (target.length) {
+                event.preventDefault();
+                $('html, body').stop().animate({
+                    scrollTop: target.offset().top - 80
+                }, 1000);
+            }
+        });
+
+        // Initialize hero slider if needed
+        if ($('.hero-slider').length) {
+            // Basic slider functionality can be added here
+            var slides = $('.hero-slider .slide');
+            var currentSlide = 0;
+
+            setInterval(function () {
+                slides.removeClass('active');
+                currentSlide = (currentSlide + 1) % slides.length;
+                slides.eq(currentSlide).addClass('active');
+            }, 5000);
         }
     });
-    
-    // Initialize hero slider if needed
-    if ($('.hero-slider').length) {
-        // Basic slider functionality can be added here
-        var slides = $('.hero-slider .slide');
-        var currentSlide = 0;
-        
-        setInterval(function() {
-            slides.removeClass('active');
-            currentSlide = (currentSlide + 1) % slides.length;
-            slides.eq(currentSlide).addClass('active');
-        }, 5000);
+</script>
+
+
+
+
+<link rel="preload" as="font" id="rs-icon-set-revicon-woff" href="wp-content/plugins/revslider/sr6/assets/fonts/revicons/revicons90c6.woff?5510888" type="font/woff" crossorigin="anonymous" media="all" />
+<link rel="preload" as="font" id="rs-icon-set-fa-icon-woff" type="font/woff2" crossorigin="anonymous" href="wp-content/plugins/revslider/sr6/assets/fonts/font-awesome/fonts/fontawesome-webfont3e6e.woff2?v=4.7.0" media="all" />
+<link rel="stylesheet" property="stylesheet" id="rs-icon-set-fa-icon-css" href="wp-content/plugins/revslider/sr6/assets/fonts/font-awesome/css/font-awesome.css" type="text/css" media="all" />
+<div id="thim-popup-login">
+    <div class="popup-login-wrapper">
+        <div class="thim-login-container">
+
+            <div class="thim-popup-inner">
+                <div class="thim-login">
+                    <h4 class="title">Login with your site account</h4>
+                    <form name="loginpopupform" action="https://eduma.thimpress.com/demo-main/wp-login.php"
+                          method="post" novalidate>
+                        <p class="login-username">
+                            <input type="text" name="log" placeholder="Username or email"
+                                   class="input required" size="20" aria-label="Username or email" />
+                        </p>
+                        <p class="login-password">
+                            <input type="password" name="pwd" placeholder="Password"
+                                   class="input required" value="" size="20" aria-label="Password" />
+                        </p>
+                        <input type="hidden" name="thimpress-nonce" value="43e3d44752">				<a class="lost-pass-link" href="account/indexc2b6.html?action=lostpassword" title="Lost Password">Lost your password?</a>
+                        <p class="forgetmenot login-remember">
+                            <label for="popupRememberme">
+                                <input name="rememberme" type="checkbox" value="forever"
+                                       id="popupRememberme" /> Remember Me
+                            </label>
+                        </p>
+                        <p class="submit login-submit">
+                            <input type="submit" name="wp-submit" class="button button-primary button-large"
+                                   value="Login" />
+                            <input type="hidden" name="redirect_to"
+                                   value="https://eduma.thimpress.com/demo-main/" />
+                            <input type="hidden" name="testcookie" value="1" />
+                            <input type="hidden" name="nonce"
+                                   value="d4f821e91d" />
+                            <input type="hidden" name="eduma_login_user">
+                        </p>
+
+
+                    </form>
+                    <p class="link-bottom">Not a member yet?  <a class="register" href="account/index0ddc.html?action=register">Register now</a></p>									<br />
+                    <p style="text-align: center">
+                        Wanna see how Student, Instructor, or Admin look? <br />
+                        <b><a href="https://accountlp.thimpress.com/" title="Eduma Demo Account" target="_blank">Click here to access Demo Account</a></b>
+                    </p>
+                </div>
+
+                <div class="thim-register">
+                    <h4 class="title">Register a new account</h4>
+                    <form class="auto_login" name="registerformpopup"
+                          action="https://eduma.thimpress.com/demo-main/wp-login.php?action=register"
+                          method="post" novalidate="novalidate">
+
+                        <input type="hidden" name="register_security" value="4cc627b4dd" />
+
+                        <p>
+                            <input placeholder="Username"
+                                   type="text" name="user_login" class="input required" aria-label="Username" />
+                        </p>
+
+                        <p>
+                            <input placeholder="Email"
+                                   type="email" name="user_email" class="input required" aria-label="Email" />
+                        </p>
+
+                        <p>
+                            <input placeholder="Password"
+                                   type="password" name="password" class="input required" aria-label="Password" />
+                        </p>
+                        <p>
+                            <input placeholder="Repeat Password"
+                                   type="password" name="repeat_password"
+                                   class="input required" aria-label="Repeat Password" />
+                        </p>
+
+                        <input type="hidden" name="thimpress-nonce" value="43e3d44752">
+
+                        <input type="hidden" name="redirect_to"
+                               value="index.html" />
+                        <input type="hidden" name="modify_user_notification" value="1">
+                        <input type="hidden" name="eduma_register_user">
+
+
+                        <input type='hidden' name='signup_form_id' value='1039209898' /><input type="hidden" id="_signup_form" name="_signup_form" value="7d06f518ae" />		<p class="submit">
+                            <input type="submit" name="wp-submit" class="button button-primary button-large"
+                                   value="Sign up" />
+                        </p>
+                    </form>
+                    <p class="link-bottom">Are you a member?  <a class="login" href="account/index.html">Login now</a></p>										<br />
+                    <p style="text-align: center">
+                        Wanna see how Student, Instructor, or Admin look? <br />
+                        <b><a href="https://accountlp.thimpress.com/" title="Eduma Demo Account" target="_blank">Click here to access Demo Account</a></b>
+                    </p>
+                    <div class="popup-message"></div>
+                </div>
+            </div>
+
+            <span class="close-popup"><i class="edu-times" aria-hidden="true"></i></span>
+            <div class="cssload-container">
+                <div class="cssload-loading"><i></i><i></i><i></i><i></i></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="navbar-mobile-button">
+    <a href="index.html" title="Demo Main" class="item-menubar active"><i class="lp-icon-home"></i><span>Home</span></a><a href="courses/index.html" title="Courses" class="item-menubar"><i class="lp-icon-book-open"></i><span>Courses</span></a><div class="item-menubar thim-course-search-overlay">
+        <div class="search-toggle flex-center"><i class="lp-icon-search"></i><span>Search</span></div>		<div class="courses-searching layout-overlay">
+            <div class="search-popup-bg"></div>
+            <div class="search-popup-heading">
+                <h2 class="search-popup-title">Search</h2>
+                <i class="lp-icon-close"></i>
+            </div>
+            <form method="get" action="https://eduma.thimpress.com/demo-main/courses/">
+                <input type="text" value="" name="c_search" placeholder="What do you want to learn today?"
+                       class="thim-s form-control courses-search-input" autocomplete="off" aria-label="What do you want to learn today?" />
+                <input type="hidden" value="course" name="ref" />
+                <button type="submit" aria-label="Search"><i class="edu-search"></i></button>
+                <span class="widget-search-close"></span>
+            </form>
+            <ul class="courses-list-search list-unstyled"></ul>
+        </div>
+    </div><div class="item-menubar thim-login-popup thim-link-login"><a class="login js-show-popup flex-center" href="account/index.html" title="Account"><i class="lp-icon-user"></i><span>Account</span></a></div>
+</div>
+<link rel='stylesheet' id='wc-blocks-style-css' href='wp-content/plugins/woocommerce/assets/client/blocks/wc-blocksde44.css?ver=wc-10.1.2' type='text/css' media='all' />
+<link rel='stylesheet' id='learnpress-css' href='wp-content/plugins/learnpress/assets/css/learnpress.mina980.css?ver=4.2.9.2' type='text/css' media='all' />
+<link rel='stylesheet' id='widget-nested-tabs-css' href='wp-content/plugins/elementor/assets/css/widget-nested-tabs.min20c8.css?ver=3.32.2' type='text/css' media='all' />
+<link rel='stylesheet' id='widget-image-css' href='wp-content/plugins/elementor/assets/css/widget-image.min20c8.css?ver=3.32.2' type='text/css' media='all' />
+<link rel='stylesheet' id='widget-heading-css' href='wp-content/plugins/elementor/assets/css/widget-heading.min20c8.css?ver=3.32.2' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-shared-0-css' href='wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min52d5.css?ver=5.15.3' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-fa-solid-css' href='wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min52d5.css?ver=5.15.3' type='text/css' media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css' href='wp-content/plugins/revslider/sr6/assets/css/rs66266.css?ver=6.7.37' type='text/css' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+    #rev_slider_6_1_wrapper .zeus.tparrows {
+        cursor: pointer;
+        min-width: 70px;
+        min-height: 70px;
+        position: absolute;
+        display: block;
+        z-index: 1000;
+        border-radius: 50%;
+        overflow: hidden;
+        background: rgba(0,0,0,0.1)
     }
-});
+
+        #rev_slider_6_1_wrapper .zeus.tparrows:before {
+            font-family: 'revicons';
+            font-size: 20px;
+            color: #ffffff;
+            display: block;
+            line-height: 70px;
+            text-align: center;
+            z-index: 2;
+            position: relative
+        }
+
+        #rev_slider_6_1_wrapper .zeus.tparrows.tp-leftarrow:before {
+            content: '\e824'
+        }
+
+        #rev_slider_6_1_wrapper .zeus.tparrows.tp-rightarrow:before {
+            content: '\e825'
+        }
+
+    #rev_slider_6_1_wrapper .zeus .tp-title-wrap {
+        background: rgba(0,0,0,0.5);
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        position: absolute;
+        opacity: 0;
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        border-radius: 50%
+    }
+
+    #rev_slider_6_1_wrapper .zeus .tp-arr-imgholder {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-position: center center;
+        background-size: cover;
+        border-radius: 50%;
+        transform: translatex(-100%);
+        -webkit-transform: translatex(-100%);
+        transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s
+    }
+
+    #rev_slider_6_1_wrapper .zeus.tp-rightarrow .tp-arr-imgholder {
+        transform: translatex(100%);
+        -webkit-transform: translatex(100%)
+    }
+
+    #rev_slider_6_1_wrapper .zeus.tparrows.rs-touchhover .tp-arr-imgholder {
+        transform: translatex(0);
+        -webkit-transform: translatex(0);
+        opacity: 1
+    }
+
+    #rev_slider_6_1_wrapper .zeus.tparrows.rs-touchhover .tp-title-wrap {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        opacity: 1
+    }
+
+    #rev_slider_6_1_wrapper rs-loader.spinner2 {
+        background-color: #FFFFFF !important
+    }
+</style>
+<script type="text/javascript" src="wp-includes/js/dist/hooks.min4fdd.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+<script type="text/javascript" src="wp-includes/js/dist/i18n.minc33c.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+    /* <![CDATA[ */
+    wp.i18n.setLocaleData({ 'text direction\u0004ltr': ['ltr'] });
+    /* ]]> */
+</script>
+<script type="text/javascript" src="wp-content/plugins/contact-form-7/includes/swv/js/index6a4d.js?ver=6.1.1" id="swv-js"></script>
+<script type="text/javascript" id="contact-form-7-js-before">
+    /* <![CDATA[ */
+    var wpcf7 = {
+        "api": {
+            "root": "https:\/\/eduma.thimpress.com\/demo-main\/wp-json\/",
+            "namespace": "contact-form-7\/v1"
+        },
+        "cached": 1
+    };
+    /* ]]> */
+</script>
+<script type="text/javascript" src="wp-content/plugins/contact-form-7/includes/js/index6a4d.js?ver=6.1.1" id="contact-form-7-js"></script>
+<script type="text/javascript" src="wp-content/plugins/tp-chameleon/assets/tp-chameleon.minfa5f.js?ver=2.0.3.4" id="tp-chameleon-js"></script>
+<script type="text/javascript" src="../../widgetlogic.org/v2/js/data4285.js?t=1758369600&amp;ver=6.0.0" id="widget-logic_live_match_widget-js"></script>
+<script type="text/javascript" src="wp-includes/js/jquery/ui/core.minb37e.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script type="text/javascript" src="wp-includes/js/underscore.min3ab8.js?ver=1.13.7" id="underscore-js"></script>
+<script type="text/javascript" id="wp-util-js-extra">
+    /* <![CDATA[ */
+    var _wpUtilSettings = { "ajax": { "url": "\/demo-main\/wp-admin\/admin-ajax.php" } };
+    /* ]]> */
+</script>
+<script type="text/javascript" src="wp-includes/js/wp-util.min6c2d.js?ver=6.8.2" id="wp-util-js"></script>
+<script type="text/javascript" src="wp-includes/js/backbone.minaff7.js?ver=1.6.0" id="backbone-js"></script>
+<script type="text/javascript" src="wp-content/plugins/thim-widget-landing/assets/js/slick.minde75.js?ver=751955396" id="landing-slick-js-js"></script>
+<script type="text/javascript" src="wp-content/plugins/thim-widget-landing/assets/js/custom-scriptde75.js?ver=751955396" id="landing-js-js"></script>
+<script type="text/javascript" id="thim-core-cookie-consent-js-extra">
+    /* <![CDATA[ */
+    var thimCookieCfg = { "endpoint": "https:\/\/eduma.thimpress.com\/demo-main\/wp-json\/thim-core\/v1\/banner", "cookie_list": [] };
+    /* ]]> */
+</script>
+<script type="text/javascript" src="wp-content/plugins/thim-core/assets/js/cookie-consent.min8d5a.js?ver=2.4.0" id="thim-core-cookie-consent-js"></script>
+<script type="text/javascript" src="wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min523e.js?ver=10.1.2" id="sourcebuster-js-js"></script>
+<script type="text/javascript" id="wc-order-attribution-js-extra">
+    /* <![CDATA[ */
+    var wc_order_attribution = { "params": { "lifetime": 1.0e-5, "session": 30, "base64": false, "ajaxurl": "https:\/\/eduma.thimpress.com\/demo-main\/wp-admin\/admin-ajax.php", "prefix": "wc_order_attribution_", "allowTracking": true }, "fields": { "source_type": "current.typ", "referrer": "current_add.rf", "utm_campaign": "current.cmp", "utm_source": "current.src", "utm_medium": "current.mdm", "utm_content": "current.cnt", "utm_id": "current.id", "utm_term": "current.trm", "utm_source_platform": "current.plt", "utm_creative_format": "current.fmt", "utm_marketing_tactic": "current.tct", "session_entry": "current_add.ep", "session_start_time": "current_add.fd", "session_pages": "session.pgs", "session_count": "udata.vst", "user_agent": "udata.uag" } };
+    /* ]]> */
+</script>
+<script type="text/javascript" src="wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min523e.js?ver=10.1.2" id="wc-order-attribution-js"></script>
+<script type="text/javascript" src="wp-content/plugins/elementor/assets/js/webpack.runtime.min20c8.js?ver=3.32.2" id="elementor-webpack-runtime-js"></script>
+<script type="text/javascript" src="wp-content/plugins/elementor/assets/js/frontend-modules.min20c8.js?ver=3.32.2" id="elementor-frontend-modules-js"></script>
+<script type="text/javascript" id="elementor-frontend-js-before">
+    /* <![CDATA[ */
+    var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false }, "i18n": { "shareOnFacebook": "Share on Facebook", "shareOnTwitter": "Share on Twitter", "pinIt": "Pin it", "download": "Download", "downloadImage": "Download image", "fullscreen": "Fullscreen", "zoom": "Zoom", "share": "Share", "playVideo": "Play Video", "previous": "Previous", "next": "Next", "close": "Close", "a11yCarouselPrevSlideMessage": "Previous slide", "a11yCarouselNextSlideMessage": "Next slide", "a11yCarouselFirstSlideMessage": "This is the first slide", "a11yCarouselLastSlideMessage": "This is the last slide", "a11yCarouselPaginationBulletMessage": "Go to slide" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600 }, "responsive": { "breakpoints": { "mobile": { "label": "Mobile Portrait", "value": 767, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Mobile Landscape", "value": 992, "default_value": 880, "direction": "max", "is_enabled": false }, "tablet": { "label": "Tablet Portrait", "value": 1024, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablet Landscape", "value": 1200, "default_value": 1200, "direction": "max", "is_enabled": false }, "laptop": { "label": "Laptop", "value": 1366, "default_value": 1366, "direction": "max", "is_enabled": false }, "widescreen": { "label": "Widescreen", "value": 2400, "default_value": 2400, "direction": "min", "is_enabled": false } }, "hasCustomBreakpoints": false }, "version": "3.32.2", "is_static": false, "experimentalFeatures": { "additional_custom_breakpoints": true, "container": true, "nested-elements": true, "home_screen": true, "global_classes_should_enforce_capabilities": true, "e_variables": true, "cloud-library": true, "e_opt_in_v4_page": true, "import-export-customization": true }, "urls": { "assets": "https:\/\/eduma.thimpress.com\/demo-main\/wp-content\/plugins\/elementor\/assets\/", "ajaxurl": "https:\/\/eduma.thimpress.com\/demo-main\/wp-admin\/admin-ajax.php", "uploadUrl": "https:\/\/eduma.thimpress.com\/demo-main\/wp-content\/uploads\/sites\/95" }, "nonces": { "floatingButtonsClickTracking": "1f6af06331" }, "swiperClass": "swiper", "settings": { "page": [], "editorPreferences": [] }, "kit": { "viewport_tablet": 1024, "active_breakpoints": ["viewport_mobile", "viewport_tablet"], "global_image_lightbox": "yes", "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description" }, "post": { "id": 12, "title": "Eduma%20-%20Education%20WordPress%20Theme%20for%20eLearning%20Website", "excerpt": "", "featuredImage": "https:\/\/eduma.thimpress.com\/demo-main\/wp-content\/uploads\/sites\/95\/2023\/06\/eduma-education-wordpress-theme-1024x536.png" } };
+    /* ]]> */
+</script>
+<script type="text/javascript" src="wp-content/plugins/elementor/assets/js/frontend.min20c8.js?ver=3.32.2" id="elementor-frontend-js"></script>
+<script type="text/javascript" src="wp-includes/js/imagesloaded.minbb93.js?ver=5.0.0" id="imagesloaded-js"></script>
+<script type="text/javascript" src="wp-content/themes/eduma/assets/js/main.mina4a0.js?ver=5.7.5" id="thim-main-js"></script>
+<script type="text/javascript" src="wp-content/themes/eduma/assets/js/thim-scripts.mina4a0.js?ver=5.7.5" id="thim-scripts-js"></script>
+<script type="text/javascript" src="wp-content/themes/eduma/assets/js/search-course.mina4a0.js?ver=5.7.5" id="search-course-widget-js"></script>
+<script type="text/javascript" src="wp-content/themes/eduma/assets/js/mb-commingsoon.mina4a0.js?ver=5.7.5" id="mb-commingsoon-js"></script>
+<script type="text/javascript" defer src="wp-content/plugins/mailchimp-for-wp/assets/js/forms9073.js?ver=4.10.7" id="mc4wp-forms-api-js"></script>
+<script type="text/javascript" src="wp-content/plugins/thim-elementor-kit/build/frontend3ba1.js?ver=1.3.3" id="thim-ekit-frontend-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" src="wp-includes/js/dist/vendor/wp-polyfill.min2c7c.js?ver=3.15.0" id="wp-polyfill-js"></script>
+<script type="text/javascript" src="wp-includes/js/dist/url.mind63a.js?ver=c2964167dfe2477c14ea" id="wp-url-js"></script>
+<script type="text/javascript" src="wp-includes/js/dist/api-fetch.minc31c.js?ver=3623a576c78df404ff20" id="wp-api-fetch-js"></script>
+<script type="text/javascript" id="wp-api-fetch-js-after">
+    /* <![CDATA[ */
+    wp.apiFetch.use(wp.apiFetch.createRootURLMiddleware("wp-json/index.html"));
+    wp.apiFetch.nonceMiddleware = wp.apiFetch.createNonceMiddleware("572caba3e7");
+    wp.apiFetch.use(wp.apiFetch.nonceMiddleware);
+    wp.apiFetch.use(wp.apiFetch.mediaUploadMiddleware);
+    wp.apiFetch.nonceEndpoint = "wp-admin/admin-ajaxf809.html?action=rest-nonce";
+    /* ]]> */
+</script>
+<script type="text/javascript" id="thim-ekit-widgets-js-extra">
+    /* <![CDATA[ */
+    var ekits_script = { "ajax_url": "https:\/\/eduma.thimpress.com\/demo-main\/wp-admin\/admin-ajax.php", "text_minutes": "\u00a0minutes", "text_second": "\u00a0second" };
+    /* ]]> */
+</script>
+<script type="text/javascript" src="wp-content/plugins/thim-elementor-kit/build/widgets3662.js?ver=77ea711f3a4fb7961467" id="thim-ekit-widgets-js" defer="defer" data-wp-strategy="defer"></script>
+<script id="rs-initialisation-scripts">
+    var tpj = jQuery;
+
+    var revapi6;
+
+    if (window.RS_MODULES === undefined) window.RS_MODULES = {};
+    if (RS_MODULES.modules === undefined) RS_MODULES.modules = {};
+    RS_MODULES.modules["revslider61"] = {
+        once: RS_MODULES.modules["revslider61"] !== undefined ? RS_MODULES.modules["revslider61"].once : undefined, init: function () {
+            window.revapi6 = window.revapi6 === undefined || window.revapi6 === null || window.revapi6.length === 0 ? document.getElementById("rev_slider_6_1") : window.revapi6;
+            if (window.revapi6 === null || window.revapi6 === undefined || window.revapi6.length == 0) { window.revapi6initTry = window.revapi6initTry === undefined ? 0 : window.revapi6initTry + 1; if (window.revapi6initTry < 20) requestAnimationFrame(function () { RS_MODULES.modules["revslider61"].init() }); return; }
+            window.revapi6 = jQuery(window.revapi6);
+            if (window.revapi6.revolution == undefined) { revslider_showDoubleJqueryError("rev_slider_6_1"); return; }
+            revapi6.revolutionInit({
+                revapi: "revapi6",
+                DPR: "dpr",
+                sliderLayout: "fullscreen",
+                visibilityLevels: "1240,1024,768,480",
+                gridwidth: "1170,960,768,481",
+                gridheight: "500,400,400,320",
+                lazyType: "single",
+                spinner: "spinner2",
+                perspective: 600,
+                perspectiveType: "local",
+                editorheight: "500,400,400,320",
+                responsiveLevels: "1240,1024,768,480",
+                progressBar: { disableProgressBar: true },
+                navigation: {
+                    mouseScrollNavigation: false,
+                    wheelCallDelay: 1000,
+                    onHoverStop: false,
+                    arrows: {
+                        enable: true,
+                        tmp: "<div class=\"tp-title-wrap\">  	<div class=\"tp-arr-imgholder\"></div> </div>",
+                        style: "zeus",
+                        hide_onmobile: true,
+                        hide_under: 1024,
+                        hide_onleave: true,
+                        left: {
+
+                        },
+                        right: {
+
+                        }
+                    }
+                },
+                viewPort: {
+                    global: true,
+                    globalDist: "-200px",
+                    enable: false,
+                    visible_area: "20%"
+                },
+                fallbacks: {
+                    panZoomDisableOnMobile: true,
+                    allowHTML5AutoPlayOnAndroid: true
+                },
+            });
+
+        }
+    } // End of RevInitScript
+
+    if (window.RS_MODULES.checkMinimal !== undefined) { window.RS_MODULES.checkMinimal(); };
+</script>
+
+<script>
+    window.RS_MODULES = window.RS_MODULES || {};
+    window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+    window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+    window.RS_MODULES.defered = false;
+    window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+    window.RS_MODULES.type = 'compiled';
+</script>
+<script type="speculationrules">
+    {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/demo-main\/*"},{"not":{"href_matches":["\/demo-main\/wp-*.php","\/demo-main\/wp-admin\/*","\/demo-main\/wp-content\/uploads\/sites\/95\/*","\/demo-main\/wp-content\/*","\/demo-main\/wp-content\/plugins\/*","\/demo-main\/wp-content\/themes\/eduma\/*","\/demo-main\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+
+<script>
+    (function () {
+        function maybePrefixUrlField() {
+            const value = this.value.trim()
+            if (value !== '' && value.indexOf('http') !== 0) {
+                this.value = 'http://' + value
+            }
+        }
+
+        const urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]')
+        for (let j = 0; j < urlFields.length; j++) {
+            urlFields[j].addEventListener('blur', maybePrefixUrlField)
+        }
+    })();</script>
+<script>
+    window.addEventListener('load', function () {
+        setTimeout(function () {
+            var $ = jQuery
+            var $carousel = $('.thim-owl-carousel-post').each(function () {
+                $(this).find('.image').css('min-height', 0)
+                $(window).trigger('resize')
+            })
+        }, 500)
+    })
+</script>
+<script>
+    const lazyloadRunObserver = () => {
+        const lazyloadBackgrounds = document.querySelectorAll(`.e-con.e-parent:not(.e-lazyloaded)`);
+        const lazyloadBackgroundObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    let lazyloadBackground = entry.target;
+                    if (lazyloadBackground) {
+                        lazyloadBackground.classList.add('e-lazyloaded');
+                    }
+                    lazyloadBackgroundObserver.unobserve(entry.target);
+                }
+            });
+        }, { rootMargin: '200px 0px 200px 0px' });
+        lazyloadBackgrounds.forEach((lazyloadBackground) => {
+            lazyloadBackgroundObserver.observe(lazyloadBackground);
+        });
+    };
+    const events = [
+        'DOMContentLoaded',
+        'elementor/lazyload/observe',
+    ];
+    events.forEach((event) => {
+        document.addEventListener(event, lazyloadRunObserver);
+    });
+</script>
+<style id="" media="all">
+    @@font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: normal;
+        font-display: swap;
+        src: url(https://eduma.thimpress.com/fonts.gstatic.com/s/roboto/v49/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiA8.ttf) format('truetype');
+    }
+
+    @@font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-stretch: normal;
+        font-display: swap;
+        src: url(https://eduma.thimpress.com/fonts.gstatic.com/s/roboto/v49/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWub2bVmUiA8.ttf) format('truetype');
+    }
+
+    @@font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-stretch: normal;
+        font-display: swap;
+        src: url(https://eduma.thimpress.com/fonts.gstatic.com/s/roboto/v49/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuYjalmUiA8.ttf) format('truetype');
+    }
+
+    @@font-face {
+        font-family: 'Roboto Slab';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://eduma.thimpress.com/fonts.gstatic.com/s/robotoslab/v36/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISmb2Rm.ttf) format('truetype');
+    }
+
+    @@font-face {
+        font-family: 'Roboto Slab';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://eduma.thimpress.com/fonts.gstatic.com/s/robotoslab/v36/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoUoOmb2Rm.ttf) format('truetype');
+    }
+
+    @@font-face {
+        font-family: 'Roboto Slab';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://eduma.thimpress.com/fonts.gstatic.com/s/robotoslab/v36/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoa4Omb2Rm.ttf) format('truetype');
+    }
+</style>
+
+<script type='text/javascript'>
+    (function () {
+        var c = document.body.className;
+        c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+        document.body.className = c;
+    })();
+</script>
+<script>
+    if (typeof revslider_showDoubleJqueryError === "undefined") { function revslider_showDoubleJqueryError(sliderID) { console.log("You have some jquery.js library include that comes after the Slider Revolution files js inclusion."); console.log("To fix this, you can:"); console.log("1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on"); console.log("2. Find the double jQuery.js inclusion and remove it"); return "Double Included jQuery Library"; } }
 </script>
