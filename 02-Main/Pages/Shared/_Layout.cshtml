@@ -26,12 +26,11 @@
 	<link rel='stylesheet' id='thim-style-css' href='~/wp-content/themes/eduma/style.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='elementor-icons-thim-ekits-fonts-css' href='~/wp-content/plugins/thim-elementor-kit/build/libraries/thim-ekits/css/thim-ekits-icons.min.css' type='text/css' media='all' />
 	
-	<style>
-		body { background-color: white !important; }
-	</style>
-	
 	@await Html.PartialAsync("_ScriptHeader")
 	@await RenderSectionAsync("Styles", required: false)
+
+	<!-- Load override CSS last to win the cascade and break caches -->
+	<link rel='stylesheet' id='css-override' href='~/css/site.css' asp-append-version="true" type='text/css' media='all' />
 </head>
 <body class="pmpro-variation_1 home wp-singular page-template page-template-elementor_header_footer page page-id-12 wp-embed-responsive wp-theme-eduma theme-eduma woocommerce-no-js pmpro-body-has-access group-blog thim-body-load-overlay bg-boxed-image switch-layout-normal thim-popup-feature learnpress-v4 fixloader nofixcss has-navbar-mobile elementor-default elementor-template-full-width elementor-kit-8941 elementor-page elementor-page-12" id="thim-body">
 
